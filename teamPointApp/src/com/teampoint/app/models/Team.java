@@ -18,6 +18,9 @@ public class Team {
 		this.teamId = teamId;
 	}
 
+	public Team(String teamName) {
+		this.teamName = teamName;
+	}
 
 	public String getTeamName() {
 		return teamName;
@@ -40,7 +43,7 @@ public class Team {
 		this.teamId = teamId;
 	} 
 	
-	// add points to tota; 
+	// add points to total; 
 	
 	public int addPoints(int points) {
 		if(points == 0) 
@@ -59,13 +62,13 @@ public class Team {
 		return "Team[teamName=" + teamName + ", totalPoints=" + totalPoints + "]";
 	}
 	
-   public enum PointCategories{
-	   public final int value;
-	   private PointCategories(int value) 
-	   {
-		   this.value = value;
-	   }
-   }
+//   public enum PointCategories{
+//	   public final int value;
+//		private PointCategories(int value)
+//		{
+//		   this.value = value;
+//	   }
+//   }
 	
 	
 	
